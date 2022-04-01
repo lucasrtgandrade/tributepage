@@ -9,3 +9,5 @@ Conforme o desafio propostos pelo [Code Academy](https://www.codecademy.com/reso
 ## Autores
 
 [Lucas Reategui](https://www.linkedin.com/in/lucasrtgandrade/)
+
+### Acesse o site [aqui](https://lucasrtgandrade.github.io/tributepage/)
