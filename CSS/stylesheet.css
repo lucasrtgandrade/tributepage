@@ -1,0 +1,259 @@
+:root {
+    --clr-primary700: #4b2a60;
+    --clr-primary500: #72387e;
+    --clr-primary300: #8e448e;
+  
+    --clr-background500: #fedc99;
+    --clr-background300: #ffffff;
+  
+    --clr-text700: #0e0c09;
+    --clr-text300: #f0f0f0;
+  
+    --ff-primary: "Merriweather", serif;
+    --ff-accent: "Open Sans", sans-serif;
+  }
+* {
+    margin: 0;
+}
+h1 {
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    font-style: italic;
+    line-height: 120%;
+    font-size: 2.441rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--ff-primary);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+p {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    line-height: 120%;
+    font-size: .8rem;
+    text-align: center;
+}
+
+a {
+    font-family: var(--ff-accent);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+}
+header {
+    padding: 16px 0px 0px 0px;
+    background-color: var(--clr-background500);
+}
+@media (max-height:590px) {
+    header {
+        height: auto;
+    }
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+    background-color: var(--clr-background500);
+}
+
+.main-txt {
+    max-width: 280px;
+    text-align: justify;
+    margin: 16px;
+}
+
+.main-image {
+    max-width: 218px;
+    display: block;
+}
+
+@media (min-width: 350px) {
+    .br-mobile {
+        display: none;
+    }
+}
+body {
+    background-color: var(--clr-background500);
+}
+button {
+    background-color: var(--clr-primary700);
+    border-radius: 8px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.btn-txt {
+    color: var(--clr-text300);
+    padding: 8px;
+}
+
+.btn-icon {
+    fill: var(--clr-text300);
+    display: inline-flex;
+    padding-right: 8px;
+}
+
+.main-cta {
+    text-align: center;
+}
+
+/* CARDS */
+
+.cards-row {
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+    margin: 0px auto;
+}
+.card {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 8px auto;
+}
+
+.card-detail {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 8px;
+    background-color: var(--clr-background300);
+}
+
+.card-image {
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+}
+
+.card-text {
+    text-align: justify;
+    width: fit-content;
+    line-height: 150%;
+}
+
+.card-link {
+    width: fit-content;
+}
+
+
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 3.815rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+    
+    a {
+        font-size: 1.25rem;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 40px;
+    }
+
+    .main-image {
+        max-width: 292px;
+        margin-left: auto;
+    }
+
+    .main-cta {
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+    }
+
+    .main-txt {
+        max-width: 320px;
+    }
+
+    button {
+        margin: 0px 16px;
+        max-width: fit-content;
+    }
+    /* CARDS */
+    .card {
+        max-width: fit-content;
+        flex-direction: row;
+    }
+
+    .card-image {
+        border-radius: 8px 0px 0px 8px;
+        max-height: 240px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .cards-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    
+    .card {
+        max-width: 320px;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .card-detail {
+        max-width: fit-content;
+        height: 100%;
+    }
+
+    .card-image {
+        border-radius: 8px 8px 0px 0px;
+        display: flex;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--clr-primary700);
+    margin-top: 16px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-icon {
+    fill: var(--clr-text300);
+    display: inline-flex;
+}
+
+small {
+    font-family: var(--ff-accent);
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--clr-text300);
+    text-transform: uppercase;  
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+}
