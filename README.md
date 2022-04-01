@@ -8,4 +8,4 @@ Conforme o desafio propostos pelo [Code Academy](https://www.codecademy.com/reso
 
 ## Autores
 
-[Lucas Reategui](www.linkedin.com/in/lucasrtgandrade)
+[Lucas Reategui](https://www.linkedin.com/in/lucasrtgandrade/)
